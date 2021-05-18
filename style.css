@@ -1,0 +1,87 @@
+/*Redefinindo padrão dos elementos da página*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Helvetica;
+    background-color: whitesmoke;
+}
+
+/* CSS em si */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ee1c25;
+}
+
+nav a{
+    margin-left: 120px;
+    font-size: 1.2em;
+    color: #f6f126;
+    text-decoration: none;
+    font-weight: bolder;
+    opacity: .8;
+    transition: .3s;
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+#logo img {
+    width: 300px;
+}
+
+main {
+    margin-top: 80px;
+    width: 85%;
+    margin-left: 14%;
+}
+
+.titulo {
+    color: #ee1c25;
+    font-size: 1.8em;
+}
+
+.grid {
+    margin-top: 70px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-gap: 16px;
+}
+
+.card img {
+    margin-top: 10px;
+    height: 70px;
+}
+
+.card {
+    display: flex;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center ;
+    background-color:#ee1c25;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: .9;
+    transition: .4s;
+}
+
+.card:hover {
+    opacity: 1;
+}
+
+.card h2 {
+    color: #f6f126;
+    font-size: 1em;
+    font-weight: bolder
+}
