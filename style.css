@@ -8,7 +8,7 @@
 
 body {
     font-family: Helvetica; 
-    color: #D69D09;
+    color: #f6f126;
     background-color: whitesmoke;
 }
 
@@ -133,10 +133,6 @@ nav a:hover {
     opacity: 1;
 }
 
-.material-icons {
-    font-family: material-icons;
-}
-
 .formaPagamento {
     display: flex;
     align-items: center;
@@ -148,7 +144,8 @@ nav a:hover {
 .pagamento {
     text-align: center;
     display: flex;
-    min-height: 428px;
+    min-height: 516px;
+    min-width: 325px;
     flex-direction: column;
     align-items: center;
     justify-items: center ;
@@ -163,6 +160,10 @@ nav a:hover {
     height: 80px;
 }
 
+#bandeiraEloImg {
+    height: 60px;
+}
+
 .pagamento .pagamentoImg {
     height: 50px;
     border: 2px solid black;
@@ -173,6 +174,18 @@ nav a:hover {
 #formaPagamentoTitulo {
     margin-top: 35px;
     text-align: center;
+}
+
+.pagamentoOpcoes {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 16px;
+    justify-items: center;
+}
+
+.pagamento h2 {
+    margin-top: 20px;
 }
 
 .endereco {
