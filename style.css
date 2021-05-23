@@ -7,7 +7,8 @@
 }
 
 body {
-    font-family: Helvetica;
+    font-family: Helvetica; 
+    color: #D69D09;
     background-color: whitesmoke;
 }
 
@@ -61,9 +62,11 @@ nav a:hover {
 .card img {
     margin-top: 10px;
     height: 70px;
+    margin-bottom: 15px;
 }
 
 .card {
+    position: relative;
     display: flex;
     min-height: 100px;
     flex-direction: column;
@@ -90,6 +93,7 @@ nav a:hover {
 .card p{
     color: whitesmoke;
     font-weight: bold;
+    margin-top: 30px    ;
 }
 
 
@@ -98,7 +102,7 @@ nav a:hover {
     background-image: url("images/carros/background.jpg");
     background-repeat: no-repeat;
     height: 450px;
-    color: whitesmoke;
+    color: #f6f126;
     padding-top: 35px;
     box-shadow: #181818 0px 0px 10px;
 }
@@ -110,13 +114,14 @@ nav a:hover {
 #promo h1 {
     position: absolute;
     right: 200px;
+    top: 80px;
 }
 
 #promo a {
     position: absolute;
-    bottom: 220px;
+    top: 225px;
     right: 50px;
-    color: whitesmoke;
+    color: #f6f126;
     text-decoration: none;
     font-size: 4rem;
     font-weight: bolder;
@@ -142,9 +147,23 @@ nav a:hover {
 
 .pagamento {
     text-align: center;
+    display: flex;
+    min-height: 428px;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center ;
+    background-color:rgba(238, 28, 37);
+    padding: 10px;
+    border-radius: 5px;
+    transition: .4s;
+    box-shadow: #ee1c25 0px 0px 3px;
 }
 
 .pagamento img {
+    height: 80px;
+}
+
+.pagamento .pagamentoImg {
     height: 50px;
     border: 2px solid black;
     border-radius: 50%;
@@ -158,7 +177,68 @@ nav a:hover {
 
 .endereco {
     text-align: center;
-    box-shadow: #181818 0px 0px 15px;
     padding: 50px 0px 50px 0px;
 }
 
+.endereco h1 {
+    margin-bottom: 100px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-color: #ee1c25;
+    color: #f6f126;
+    box-shadow: #181818 0px 0px 12px;
+}
+
+
+.social {
+    position: absolute;
+    right: 20px;
+}
+
+.social a {
+    margin-left: 30px;
+}
+
+.social img{
+    width: 50px;
+    border-radius: 50%;
+    opacity: .8;
+    transition: .4s;
+}
+
+.social img:hover {
+    opacity: 1;
+}
+
+.telefone {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 340px;
+}
+
+.telefone img {
+    width: 39px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #f6f126;
+}
+
+.telefone h4 {
+    margin-left: 5px;
+}
+
+hr {
+    border: 1px solid #ee1c25;
+    width: 70%;
+    margin-left: 15%;
+}
+
+footer h3 {
+    margin-left: 120px;
+}
