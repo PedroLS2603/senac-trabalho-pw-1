@@ -10,6 +10,8 @@ body {
     font-family: Helvetica; 
     color: #f6f126;
     background-color: whitesmoke;
+    position: relative;
+    height: 100%;
 }
 
 /* CSS em si */
@@ -42,7 +44,7 @@ nav a:hover {
 
 .marcas, .listaCarros {
     margin-top: 50px;
-    width: 90%;
+    width: 80%;
     margin-left: 14%;
 }
 
@@ -140,6 +142,9 @@ nav a:hover {
     padding: 50px 0px 50px 0px;
 }
 
+main {
+    min-height: 489px;
+}
 
 .pagamento {
     text-align: center;
@@ -207,7 +212,6 @@ footer {
     box-shadow: #181818 0px 0px 12px;
 }
 
-
 .social {
     position: absolute;
     right: 20px;
@@ -254,4 +258,15 @@ hr {
 
 footer h3 {
     margin-left: 120px;
+}
+
+.historia {
+    text-align: center;
+    margin: 50px 0px 36px 0px;
+}
+
+.historiaTexto{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-top: 40px;
 }
